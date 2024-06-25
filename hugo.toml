@@ -1,6 +1,6 @@
-baseURL = 'https://colinwilson.github.io'
+baseURL = 'https://multsec.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'MMultSec Documentation'
 
 [module]
     [[module.imports]]
