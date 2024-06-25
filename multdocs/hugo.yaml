@@ -1,0 +1,47 @@
+baseURL: https://multsec.github.io/
+languageCode: en-us
+title: MultSec Docs
+
+# import hextra as module
+module:
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    noClasses: false
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      link: /
+      width: 40
+      height: 20
+
+  footer:
+    displayCopyright: true
+    displayPoweredBy: false
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: Search
+      weight: 2
+      params:
+        type: search
+    - name: GitHub
+      weight: 3
+      url: "https://github.com/MultSec"
+      params:
+        icon: github
