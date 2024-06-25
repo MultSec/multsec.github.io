@@ -57,11 +57,12 @@ jobs:
         run: |
           hugo \
             --gc --minify \
+            --themesDir=../.. --source=multdocs \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./multdocs/public
 
   # Deployment job
   deploy:
