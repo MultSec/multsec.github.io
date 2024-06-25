@@ -1,6 +1,6 @@
-baseURL = 'https://multsec.github.io/'
+baseURL = 'https://colinwilson.github.io'
 languageCode = 'en-us'
-title = 'MultSec Documentation'
+title = 'My New Hugo Site'
 
 [module]
     [[module.imports]]
@@ -9,3 +9,12 @@ title = 'MultSec Documentation'
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[[menu.primary]]
+    name  = "Docs"
+    url = "/docs/"
+    identifier = "docs"
+    weight = 10
