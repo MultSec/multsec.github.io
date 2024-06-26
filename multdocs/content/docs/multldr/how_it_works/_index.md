@@ -10,7 +10,7 @@ The backend of MultiLoader is a simple REST API that allows you to upload files,
 
 ## Architecture
 
-![Architecture](/images/multldr-architecture.png)
+![Architecture](multldr-architecture.png)
 
 The architecture of MultiLoader is simple. A web client interacts with the backend API to upload files and loader options. The backend API stores the payload in a temporary directory with the name of the session id. The session id is a unique identifier for the session created by the user. The session id is used to identify the related files and loader options. The backend API then processes the files with the loader options and stores the processed files in the temporary directory. The processed files are then available for download by the user.
 
