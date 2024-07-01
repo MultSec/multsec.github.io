@@ -16,9 +16,7 @@ To use MultLdr, follow these steps:
 
 When you generate the loader, MultLdr will create a standalone executable that can be used to execute the shellcode, when done its will download the loader to your local machine.
 
-## Demo
-
-To see a demonstration of how to use MultLdr, watch the following video:
+## Example
 
 {{< video src="/demo.mp4" controls="yes" >}}
 
