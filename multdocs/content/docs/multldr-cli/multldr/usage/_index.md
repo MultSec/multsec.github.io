@@ -7,12 +7,12 @@ title: Usage
 
 The MultLdr CLI client is a command-line tool that allows users to interact with the MultLdr server. The MultLdr CLI client provides the following commands:
 
-## Help
+## help
 
 To get help on the available commands, run the following command:
 
 ```shell
-$ multldr-cli --help
+$ multldr-cli help
 NAME:
    MultLdr CLI client - A new cli application
 
@@ -30,7 +30,7 @@ GLOBAL OPTIONS:
 $
 ```
 
-## plugs command
+## plugs
 
 The plugs command retrieves the list of plugins present in the system. To get the options for the plugs command, run the following command:
 
@@ -53,7 +53,7 @@ $
 
 {{< video src="plugs.mp4" controls="yes" >}}
 
-## gen command
+## gen
 
 The gen command generates a loader with the options provided. To get the options for the gen command, run the following command:
 
