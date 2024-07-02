@@ -1,7 +1,7 @@
 ---
 linkTitle: "MultCheck"
 title: MultCheck
-weight: 3
+weight: 4
 next: /docs/multcheck/how_it_works
 ---
 
