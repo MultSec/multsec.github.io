@@ -45,6 +45,8 @@ sequenceDiagram
     Frontend->>Backend: Request scan
     Backend->>Probe:    Request sample scanning
     Probe->>Probe:      Set sample status
+    Probe->>Backend:    Request Sample
+    Backend->>Probe:    Return Sample
     Probe->>Backend:    Return Status 
     Backend->>Frontend: Return status
     Frontend->>Backend: Request status
