@@ -115,10 +115,12 @@ webapp
 ```
 
 ### Probe
-The probe is a small agent that runs and verifies the detection of a given sample in a given environment. The probe is built using Go and is configured through the configuration file. The probe is responsible for running the sample in the given environment and verifying the detection of the sample by the security product. To allow the probe to run when the Virtual Machine starts, the probe must be added to the `startup` folder.
+The probe is a small binary, located at the startup folder so it can be run at startup, it is responsible for running the samples in the given environment and verifying the detection of the samples by the security products.
+
+The probe first listens for tasks provided by the backend and then downloads the sample and runs it in the given environment, after downloading the sample, checks if the security solution deleted the threat and if it did, it extracts the bytes of the sample that the security product has detected if the detection was through a static analysis. If the sample isn't deleted, the probe will then run the sample in the given environment and check if the security product detects the sample dynamically.
 
 ### MultCheck
-The MultCheck is a small library that allows each probe to extract the bytes of the sample that a given security product has detected. The MultCheck is built using Go and is responsible for extracting the bytes of the sample that a given security product has detected. The MultCheck relies on the configuration file to extract the bytes of the sample. The configuration file must be provided to the Probe and any needed configuration must be done in the `config.json` file as follows:
+The MultCheck is a small library , used by the probe, that allows each probe to extract the bytes of the sample that a given security product has detected. The MultCheck relies on the configuration file to extract the bytes of the sample. The configuration file must be provided to the Probe and any needed configuration must be done in the `config.json` file as follows:
 
 ```yml
 {
