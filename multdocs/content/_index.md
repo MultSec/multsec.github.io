@@ -36,7 +36,7 @@ MultSec offers a wide array of offensive and defensive security tools.
         link="docs/multscan-cli"
         subtitle="A lightweight, multi-platform CLI client for the MultScan project."
     >}}
-        {{< hextra/feature-card
+    {{< hextra/feature-card
         title="Modules"
         link="https://github.com/MultSec/Modules"
         subtitle="A collection of various malware techniques aimed at Windows through MinGW for the MultLdr project."
